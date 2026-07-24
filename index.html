@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marwan El-Sawy — Software Engineer & CS Student</title>
+    <meta
+      name="description"
+      content="Marwan El-Sawy is a Computer Science & Software Engineering student at AASTMT (Smart Village Campus) building high-performance web apps, AI diagnostic systems, and digital logic simulators."
+    />
+    <meta
+      name="keywords"
+      content="Marwan El-Sawy, AAST, AASTMT, Smart Village, Software Engineering, Full-Stack Developer, Mario Logic, Auto-Care AI, JavaScript, C++, Python, Portfolio"
+    />
+    <meta name="author" content="Marwan El-Sawy" />
+    <meta name="theme-color" content="#0d0f12" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="frame">
+      <header class="topbar">
+        <a class="logo" href="#work" aria-label="Homepage">
+          <span>MarwanElSawy</span>
+        </a>
+        <nav class="menu" aria-label="Primary Navigation">
+          <a href="#work" class="menu-link active" data-route="work">Work</a>
+          <a href="#about" class="menu-link" data-route="about">About</a>
+          <a href="#projects" class="menu-link" data-route="projects">Projects</a>
+          <a href="#experience" class="menu-link" data-route="experience">Experience</a>
+        </nav>
+        <div class="topbar-actions">
+          <p class="availability">Available for freelance & tech roles</p>
+          <a
+            class="contact-btn"
+            href="https://github.com/AAST1M"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
+          </a>
+        </div>
+      </header>
+
+      <section class="view-stage" aria-live="polite">
+        <!-- ── Work Page ────────────────────────────────────── -->
+        <section class="page-view is-active" data-view="work" id="work">
+          <section class="intro intro-work">
+            <p class="eyebrow">SELECTED WORK & PORTFOLIO</p>
+            <h1>Computer Science, Full-Stack Architecture, and AI Systems.</h1>
+            <p class="intro-copy">
+              I build production-grade web platforms, digital logic simulators, and AI-backed applications — from interactive canvas circuit engines to Gemini-powered automotive diagnostics.
+            </p>
+            <div class="hero-points">
+              <p><span>University:</span> AASTMT · Smart Village Campus</p>
+              <p><span>Major:</span> Computer Science · Software Engineering</p>
+              <p><span>Stack:</span> React · TypeScript · C++ · Python · Node.js · Vite</p>
+            </div>
+          </section>
+
+          <section
+            class="carousel-block gallery-init"
+            aria-label="Featured portfolio projects"
+          >
+            <div class="carousel-head">
+              <p class="section-kicker">Featured Project Gallery</p>
+            </div>
+            <button
+              class="nav-arrow nav-prev"
+              type="button"
+              aria-label="Previous Project"
+            >
+              &#10094;
+            </button>
+            <button class="nav-arrow nav-next" type="button" aria-label="Next Project">
+              &#10095;
+            </button>
+
+            <div class="carousel-viewport">
+              <div class="carousel-track" id="carouselTrack"></div>
+            </div>
+
+            <div class="carousel-progress" aria-hidden="true">
+              <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+            </div>
+
+            <div class="carousel-meta">
+              <p
+                id="carouselCurrent"
+                class="carousel-current"
+                aria-live="polite"
+              ></p>
+              <div
+                id="carouselDots"
+                class="carousel-dots"
+                aria-label="Choose project"
+              ></div>
+              <a
+                id="carouselRepo"
+                class="carousel-action-btn secondary"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Repo
+              </a>
+              <button
+                id="carouselDetail"
+                class="carousel-action-btn detail"
+                type="button"
+              >
+                View Project &#8594;
+              </button>
+              <p class="carousel-hint">
+                Use arrows, click cards, or swipe to explore.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <!-- ── About Page ────────────────────────────────────── -->
+        <section class="page-view" data-view="about" id="about">
+          <section class="intro about-intro">
+            <p class="eyebrow">ABOUT ME</p>
+            <h1>
+              Building high-performance software systems with engineering precision.
+            </h1>
+            <p class="intro-copy">
+              I'm Marwan El-Sawy — a Computer Science & Software Engineering student at AASTMT (Arab Academy for Science, Technology & Maritime Transport - Smart Village Campus). I specialize in architecting full-stack web applications, custom algorithm solvers, and digital logic systems.
+            </p>
+            <div class="story-cta-row">
+              <a class="story-cta primary" href="mailto:marwan@aast.edu">Work With Me</a>
+              <a
+                class="story-cta"
+                href="https://github.com/AAST1M"
+                target="_blank"
+                rel="noopener noreferrer"
+              >GitHub Profile</a>
+            </div>
+          </section>
+
+          <section class="about-layout" aria-label="About Marwan El-Sawy">
+            <article class="about-card about-highlight">
+              <p class="about-kicker">Current Focus</p>
+              <h2>
+                Computer Science @ AASTMT (Smart Village) & Software Engineering
+              </h2>
+              <p>
+                Deeply focused on algorithm design, data structures, digital logic simulation, full-stack React/Node.js development, and AI diagnostics.
+              </p>
+              <p class="about-card-note">
+                Creator of <strong>Mario Logic & Algo Pro</strong> and <strong>Auto-Care AI Platform</strong>.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <p class="about-kicker">Engineering Approach</p>
+              <p>
+                I prioritize clean architecture, performant code, and intuitive user experiences. Every project starts with a robust data model and ends with concrete, verified execution.
+              </p>
+            </article>
+
+            <article class="about-card">
+              <p class="about-kicker">What You Can Expect</p>
+              <ul class="about-list">
+                <li>High-performance web applications built with React & Vite</li>
+                <li>Comprehensive test-driven development (TDD)</li>
+                <li>Clear documentation and maintainable codebase</li>
+                <li>Reliable execution from initial prototype to final launch</li>
+              </ul>
+            </article>
+
+            <article class="about-card">
+              <p class="about-kicker">Core Technologies</p>
+              <div class="about-tags">
+                <span>JavaScript</span><span>TypeScript</span><span>C++</span>
+                <span>Python</span><span>React</span><span>Node.js</span>
+                <span>Vite</span><span>HTML5 / CSS3</span><span>Git</span>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <!-- ── Projects Page ─────────────────────────────────── -->
+        <section class="page-view" data-view="projects" id="projects">
+          <section class="intro">
+            <p class="eyebrow">KEY PROJECTS</p>
+            <h1>Engineering systems & applications built for real impact.</h1>
+            <p class="intro-copy">
+              Explore my main software projects spanning digital logic engineering, AI-backed automotive diagnostic platforms, and academic algorithm suites.
+            </p>
+          </section>
+
+          <div class="projects-grid">
+            <article class="project-item-card">
+              <span class="project-badge">Featured</span>
+              <h2>Mario Logic & Algo Pro</h2>
+              <p>
+                Interactive 2D digital logic circuit simulator, automated truth table matrix evaluator, and Karnaugh Map (K-Map) Quine-McCluskey solver with PDF/PNG/CSV exports.
+              </p>
+              <div class="project-tags-row">
+                <span>Vanilla JS</span><span>HTML5 Canvas</span><span>Vite</span><span>Node.js</span>
+              </div>
+              <a
+                class="story-cta primary"
+                href="https://github.com/AAST1M/mario-logic-algo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository
+              </a>
+            </article>
+
+            <article class="project-item-card">
+              <span class="project-badge">AI Platform</span>
+              <h2>Auto-Care AI Platform</h2>
+              <p>
+                Integrated automotive service discovery, emergency towing winch dispatch with fair price negotiation, and Gemini AI diagnostic fault code troubleshooting.
+              </p>
+              <div class="project-tags-row">
+                <span>React 19</span><span>TypeScript</span><span>Gemini AI</span><span>Vite</span>
+              </div>
+              <a
+                class="story-cta primary"
+                href="https://github.com/AAST1M/auto-CARe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository
+              </a>
+            </article>
+
+            <article class="project-item-card">
+              <span class="project-badge">AAST Coursework</span>
+              <h2>Academic Data Structures & Algorithm Suite</h2>
+              <p>
+                Comprehensive C++, Python, and Java software projects developed across computer science coursework at AAST Smart Village Campus.
+              </p>
+              <div class="project-tags-row">
+                <span>C++</span><span>Python</span><span>Data Structures</span><span>Algorithms</span>
+              </div>
+              <a
+                class="story-cta"
+                href="https://github.com/AAST1M"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Profile
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- ── Experience Page ───────────────────────────────── -->
+        <section class="page-view" data-view="experience" id="experience">
+          <div class="exp-view-grid">
+            <div class="exp-view-col">
+              <p class="eyebrow" style="margin-bottom: 1.1rem">EDUCATION & ACADEMICS</p>
+              <div class="experience-list">
+                <article class="exp-card">
+                  <div class="exp-header">
+                    <div>
+                      <h3 class="exp-role">Computer Science Student</h3>
+                      <p class="exp-company">
+                        Arab Academy for Science, Technology & Maritime Transport (AASTMT) &nbsp;&middot;&nbsp; Smart Village Campus
+                      </p>
+                    </div>
+                    <span class="exp-period">Major: Software Engineering</span>
+                  </div>
+                  <ul class="exp-bullets">
+                    <li>
+                      Specializing in Software Engineering, Data Structures, Algorithms, Object-Oriented Programming, and Web Application Architecture.
+                    </li>
+                    <li>
+                      Architected and delivered multiple university software projects including Auto-Care AI and digital circuit solvers.
+                    </li>
+                  </ul>
+                  <div class="exp-tags">
+                    <span>Software Engineering</span><span>Algorithms</span><span>Data Structures</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="exp-view-col">
+              <p class="eyebrow" style="margin-bottom: 1.1rem">SKILLS & TECH STACK</p>
+              <div class="stack-grid">
+                <div class="stack-group">
+                  <p class="stack-group-label">Languages</p>
+                  <div class="stack-tags">
+                    <span>JavaScript (ES6+)</span><span>TypeScript</span><span>C++</span><span>Python</span><span>Java</span>
+                  </div>
+                </div>
+                <div class="stack-group">
+                  <p class="stack-group-label">Frontend & UI</p>
+                  <div class="stack-tags">
+                    <span>React 19</span><span>HTML5 Canvas 2D</span><span>Vite</span><span>CSS3</span><span>Tailwind CSS</span>
+                  </div>
+                </div>
+                <div class="stack-group">
+                  <p class="stack-group-label">Backend & AI</p>
+                  <div class="stack-tags">
+                    <span>Node.js</span><span>Google Gemini AI</span><span>REST APIs</span><span>JSON Services</span>
+                  </div>
+                </div>
+                <div class="stack-group">
+                  <p class="stack-group-label">Tooling & Engineering</p>
+                  <div class="stack-tags">
+                    <span>Git & GitHub</span><span>VS Code / Antigravity</span><span>Linux</span><span>Vite Build System</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer id="contact" class="contact" aria-label="Contact links">
+        <p class="contact-copy">
+          Interested in collaborating or hiring for software projects? Let's connect.
+        </p>
+        <div class="contact-links">
+          <a class="contact-link-btn" href="mailto:marwan@aast.edu">Email</a>
+          <a
+            class="contact-link-btn"
+            href="https://github.com/AAST1M"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub (@AAST1M)
+          </a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js" defer></script>
+
+    <!-- Modal for Project Details -->
+    <div
+      class="project-modal"
+      id="projectModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      hidden
+    >
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-panel">
+        <button
+          class="modal-close"
+          id="modalClose"
+          aria-label="Close project details"
+        >
+          ✕
+        </button>
+        <div class="modal-body">
+          <p class="modal-kicker">Featured Project</p>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-tags" id="modalTags"></div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-links" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
