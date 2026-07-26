@@ -23,9 +23,16 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #0b0d12;
+  color-scheme: dark;
+  width: 100%;
+}
+
 html,
 body {
   width: 100%;
+  background-color: #0b0d12;
 }
 
 body {
@@ -665,14 +672,42 @@ body {
 
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
+  body {
+    padding: 0.4rem;
+    background-color: #0b0d12;
+  }
+  .frame {
+    padding: 1.2rem 1rem;
+    border-radius: 20px;
+  }
   .topbar {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.8rem;
   }
   .menu {
-    grid-column: 1 / -1;
+    grid-column: 1;
     justify-self: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 5.5vw, 2.4rem);
+    line-height: 1.15;
+  }
+  .hero-p {
+    font-size: 0.95rem;
   }
   .about-layout, .exp-view-grid {
     grid-template-columns: 1fr;
+  }
+  .carousel-deck {
+    flex-direction: column;
+    height: auto;
+  }
+  .carousel-card {
+    width: 100% !important;
+    height: auto;
+    min-height: 320px;
   }
 }
