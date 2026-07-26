@@ -644,16 +644,45 @@ body {
   line-height: 1.5;
 }
 
-.stack-group {
-  margin-bottom: 1rem;
-}
-
 .stack-group-label {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.5rem;
   font-size: 0.8rem;
   font-weight: 700;
   color: #ef4444;
   text-transform: uppercase;
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.stack-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(30, 41, 59, 0.5);
+  color: #f1f5f9;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 180ms ease;
+}
+
+.stack-tags span:hover {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.stack-tags span img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 /* Methods & Architecture Section */
