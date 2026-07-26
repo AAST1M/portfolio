@@ -658,7 +658,8 @@ body {
   gap: 0.55rem;
 }
 
-.stack-tags span {
+.stack-tags span,
+.stack-tags a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -669,17 +670,21 @@ body {
   color: #f1f5f9;
   font-size: 0.8rem;
   font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 180ms ease;
 }
 
-.stack-tags span:hover {
+.stack-tags span:hover,
+.stack-tags a:hover {
   border-color: #ef4444;
   background: rgba(239, 68, 68, 0.15);
   color: #fff;
   transform: translateY(-2px);
 }
 
-.stack-tags span img {
+.stack-tags span img,
+.stack-tags a img {
   width: 16px;
   height: 16px;
   object-fit: contain;
@@ -751,6 +756,8 @@ body {
   color: #f1f5f9;
   font-size: 0.83rem;
   font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 180ms ease;
 }
 
