@@ -348,6 +348,7 @@ body {
   font-family: "Syne", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
+  transition: font-size 300ms ease;
 }
 
 .card-content p {
@@ -355,6 +356,23 @@ body {
   font-size: 0.88rem;
   color: #cbd5e1;
   line-height: 1.4;
+  transition: opacity 300ms ease;
+}
+
+/* Inactive/Closed Card State formatting */
+.portfolio-card:not(.is-active) .card-content {
+  padding: 0.8rem 0.6rem;
+}
+
+.portfolio-card:not(.is-active) .card-content h2 {
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio-card:not(.is-active) .card-content p {
+  display: none;
 }
 
 .nav-arrow {
